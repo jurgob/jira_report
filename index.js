@@ -3,7 +3,7 @@ var JiraApi = require('jira-client');
 
 var jira = new JiraApi({
   protocol: 'https',
-  host: 'nexmoinc.atlassian.net',
+  host: process.env.JIRA_HOST,
   username: process.env.JIRA_USER,
   password: process.env.JIRA_PASS,
   apiVersion: '2',
